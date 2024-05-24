@@ -1,0 +1,158 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-smooth: auto;
+  /* -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased; */
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  font-style: normal;
+  src: local('Roboto-Regular'), url(Roboto-Regular.ttf);
+}
+
+body {
+  background-color: #282C34;
+  color: white;
+  font-family: 'Roboto-Regular', sans-serif;
+}
+
+ol, ul {
+  list-style: square;
+}
+
+:root {
+  --gun-nitro: #426DFB;
+  --gun-shock: #FED128;
+  --car-red: #F80B25;
+  --car-blue: #243796;
+  --car-lightblue: #1B86BC;
+  --car-green: #1E9730;
+  --car-yellow: #F9E81F;
+  --car-purple: #6F0A82;
+  --car-orange: #F78121;
+  --car-pink: #F13C9D;
+  --car-black: #222222;
+  --car-gray: #888888;
+  --car-white: #FFFFFF;
+}
+
+button {
+  color: #FFF;
+  border-radius: 0.1em;
+  line-height: 0;
+  border: 0;
+  padding: 1em;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 'Roboto-Regular', sans-serif;
+  background-color: #333;
+} 
+
+button#startButton {   background-color: green; }
+button#stopButton {   background-color: var(--car-red); }
+button.update {   background-color: #900; }
+
+button#resetButton{
+  background-color: #333;
+}
+button#lapButton {
+  background-color: var(--car-orange);
+}
+
+a,
+a:link,
+a:visited {
+  font-style:underline;
+  -webkit-filter: brightness(2);
+  color: #FFF;
+}
+a:hover,
+button:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(1.2);
+}
+a[target='_blank']::after {content: '\25F3';}
+
+
+table {
+  width: 96vw;
+  margin:0 auto;
+  color: #fff;
+  background: #000;
+  white-space: nowrap;
+  opacity: 0.8;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+tr:nth-child(even) {
+  background: #111;
+}
+
+tr:hover {
+  background-color: #23090a;
+}
+
+td:nth-child(1) {  /* first column of each table */
+  font-weight: bold;
+  text-align: center;
+}
+
+table th,
+table td {
+  position: relative;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid #333;
+  border-collapse: collapse;
+  vertical-align: middle;
+  padding: 3vw 0.7vw;
+  text-align: center;
+  color: #fff;
+  font-size: 1.8em;
+  }
+
+table th {
+  /* font-size: 1.8em; */
+  padding: 2vw 0vw;
+  font-weight: bold;
+  border-left: 1px solid #800;
+  background: #a00;
+}
+
+table td {
+  border-left: 1px solid #222;
+  font-weight: normal;
+}
+
+
+#timerDisplay{
+  font-size: 10vw;
+  margin: 20px auto;
+  text-align: center;
+  color:#DDD;
+}
+
+#stopWatch{
+  font-size: 2vw;
+  margin: 50px auto;
+  text-align: center;
+}
+
+
+
